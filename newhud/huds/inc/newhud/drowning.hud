@@ -1,0 +1,49 @@
+setAlign 2 2	
+setFontFamily "Montserrat"
+setFontSize %VIDHEIGHT / 60
+
+// DROWNING warning
+if %DROWNING < 120
+	setSize 75 * 1.333 * %VIDHEIGHT / %VIDWIDTH, 6
+	setAlign 2 1
+	setCursor #WIDTH / 2, 210
+
+
+	setAlign 2 2
+	setSize 92 * 1.333 * %VIDHEIGHT / %VIDWIDTH, 7
+	setColor 0 0 0 .3
+	drawPicByName, gfx/ui/white
+	setColor 1 1 1 1
+
+	setSize 90 * 1.333 * %VIDHEIGHT / %VIDWIDTH, 5
+	if %DROWNING < 120
+		setColor 0.2 0.6 1 0.4
+		drawPicBar %DROWNING, 120, "gfx/ui/white"
+	endif
+
+	// Number
+	if %DROWNING <= 0
+	setAlign 2 2
+	setColor 0.12 0.08 0.08 1
+	drawString "drowning"
+	moveCursor 1 * 1.333 * %VIDHEIGHT / %VIDWIDTH, 0
+	drawString "drowning"
+	moveCursor 0, 1
+	drawString "drowning"
+	moveCursor 0, -2
+	drawString "drowning"
+	moveCursor -1 * 1.333 * %VIDHEIGHT / %VIDWIDTH, 0
+	drawString "drowning"
+	moveCursor -1 * 1.333 * %VIDHEIGHT / %VIDWIDTH, 0
+	drawString "drowning"
+	moveCursor 0, 1
+	drawString "drowning"
+	moveCursor 0, 1
+	drawString "drowning"
+	moveCursor 1 * 1.333 * %VIDHEIGHT / %VIDWIDTH, 0
+	drawString "drowning"
+	moveCursor 0, -1
+	setColor 0.2 0.6 1 1
+	drawString "drowning"
+	endif
+endif

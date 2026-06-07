@@ -1,6 +1,6 @@
 # warfork-huds
 huds i made for warfork  
-to use them (not goob) in warsow go into the pk3 and delete drowning.hud
+to hide the "drowning" hud in warsow, use `cg_showFPS 2`
 
 # newhud
 bitmask `cg_showAwards`
@@ -14,7 +14,6 @@ bitmask `cg_showAwards`
 e.g all enabled (1+2+4+8+16 = 31) `cg_showAwards 31`
   
 # goob
-`cg_showFPS 2` to use in warsow  
 `cg_showPressedKeys 2` to only show keystate while chasing  
 `cg_showSpeed 2-9` to use custom crosshairs, `cg_showSpeed 1` for default  
 no screenshots as i havent bothered  
@@ -25,7 +24,6 @@ no screenshots as i havent bothered
 ![wf_240531_001618](https://github.com/Gauley123/warfork-huds/assets/34005548/e4e13c11-bce1-42b0-b6b2-bb8321fa08d6)
 
 # gauleyhud
-`cg_showSpeed 2` to disable text outlines  
 `cg_showTimer 2` for alternative timer/score placement  
 `cg_showTeamLocations 2` in console to enable team names (or 3, to hide team locations)  
 ![image](https://github.com/Gauley123/warfork-huds/assets/34005548/e554b8ea-0e8f-4e3f-9b05-b50392580f66)

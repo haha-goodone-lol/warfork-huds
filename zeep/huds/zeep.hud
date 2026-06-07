@@ -34,7 +34,10 @@ include zeep/damage_warning
 include zeep/ammo_warning
 include zeep/stunned
 include zeep/obituaries
+
+ifnot %SHOW_FPS == 2
 include zeep/drowning
+endif
 
 include zeep/powerups
 include zeep/picked_up_item 

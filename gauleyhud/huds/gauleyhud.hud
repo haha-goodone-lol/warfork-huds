@@ -28,7 +28,9 @@ include gauleyhud/armor
 include gauleyhud/ammo
 include gauleyhud/stunned
 include gauleyhud/ammo_warning
+ifnot %SHOW_FPS == 2
 include gauleyhud/drowning
+endif
 include gauleyhud/obituaries
 include gauleyhud/powerups
 include gauleyhud/weaponlist

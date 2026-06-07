@@ -15,6 +15,9 @@ if %RACE == 0
 include newhud/health
 include newhud/armor
 
+ifnot %SHOW_FPS == 2
+include newhud/drowning
+endif
 
 if %TUTORIAL == 0
 include newhud/score_solo
