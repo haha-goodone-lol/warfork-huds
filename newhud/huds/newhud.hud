@@ -86,11 +86,11 @@ endif
 
 /*
 bitmask cg_showAwards
-000001 (1)  : this does not matter
+000001 (1)  : enable awards
 000010 (2)  : icons are models
 000100 (4)  : alternate timer placement
 010000 (8) : bomb carrier text instead of icon
-100000 (16) : show amount of alive as icons
+100000 (16) : show amount of alive as numbers instead of icons
 */
 
 

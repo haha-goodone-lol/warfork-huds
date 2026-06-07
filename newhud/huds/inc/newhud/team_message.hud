@@ -30,49 +30,54 @@ if %MESSAGE_BETA
 	setCursor #WIDTH / 2, 50
 	setAlign 2 2
 	moveCursor -115 * 1.333 * %VIDHEIGHT / %VIDWIDTH, 0
-	
-	setFontFamily "WarsowNumbersOutline"
-	setColor 0 0 0 1
-	drawStatString %MESSAGE_ALPHA
 
-	setFontFamily "WarsowNumbers"
-	setColor 1 1 1 1
-	drawStatString %MESSAGE_ALPHA
 	if 0 != %SHOW_AWARDS & 16
-		setAlign 1 2
-		moveCursor 20 * 1.333 * %VIDHEIGHT / %VIDWIDTH, -32
-		setSpecialFontFamily "Silhouette"
+		setFontFamily "WarsowNumbersOutline"
 		setColor 0 0 0 1
-		moveCursor 1 * 1.333 * %VIDHEIGHT / %VIDWIDTH, 1
-		drawStringRepeatConfigString "?" %MESSAGE_ALPHA
+		drawStatString %MESSAGE_ALPHA
 
-		setColorToTeamColor #TEAM_ALPHA
-		moveCursor -1 * 1.333 * %VIDHEIGHT / %VIDWIDTH, -1
-		drawStringRepeatConfigString "?" %MESSAGE_ALPHA
+		setFontFamily "WarsowNumbers"
+		setColor 1 1 1 1
+		drawStatString %MESSAGE_ALPHA
 	endif
+
+	setAlign 1 2
+	moveCursor 20 * 1.333 * %VIDHEIGHT / %VIDWIDTH, -32
+	setSpecialFontFamily "Silhouette"
+	setColor 0 0 0 1
+	moveCursor 1 * 1.333 * %VIDHEIGHT / %VIDWIDTH, 1
+	drawStringRepeatConfigString "?" %MESSAGE_ALPHA
+
+	setColorToTeamColor #TEAM_ALPHA
+	moveCursor -1 * 1.333 * %VIDHEIGHT / %VIDWIDTH, -1
+	drawStringRepeatConfigString "?" %MESSAGE_ALPHA
+
+
 
 	setCursor #WIDTH / 2, 50
 	setAlign 2 2
 	moveCursor 115 * 1.333 * %VIDHEIGHT / %VIDWIDTH, 0
-	setFontFamily "WarsowNumbersOutline"
-	setColor 0 0 0 1
-	drawStatString %MESSAGE_BETA
 
-	setFontFamily "WarsowNumbers"
-	setColor 1 1 1 1
-	drawStatString %MESSAGE_BETA
 	if 0 != %SHOW_AWARDS & 16
-		setAlign 3 2
-		moveCursor -20 * 1.333 * %VIDHEIGHT / %VIDWIDTH, -32
-		setSpecialFontFamily "Silhouette"
+		setFontFamily "WarsowNumbersOutline"
 		setColor 0 0 0 1
-		moveCursor 1 * 1.333 * %VIDHEIGHT / %VIDWIDTH, 1
-		drawStringRepeatConfigString "?" %MESSAGE_BETA
+		drawStatString %MESSAGE_BETA
 
-		setColorToTeamColor #TEAM_BETA
-		moveCursor -1 * 1.333 * %VIDHEIGHT / %VIDWIDTH, -1
-		drawStringRepeatConfigString "?" %MESSAGE_BETA
+		setFontFamily "WarsowNumbers"
+		setColor 1 1 1 1
+		drawStatString %MESSAGE_BETA
 	endif
+
+	setAlign 3 2
+	moveCursor -20 * 1.333 * %VIDHEIGHT / %VIDWIDTH, -32
+	setSpecialFontFamily "Silhouette"
+	setColor 0 0 0 1
+	moveCursor 1 * 1.333 * %VIDHEIGHT / %VIDWIDTH, 1
+	drawStringRepeatConfigString "?" %MESSAGE_BETA
+
+	setColorToTeamColor #TEAM_BETA
+	moveCursor -1 * 1.333 * %VIDHEIGHT / %VIDWIDTH, -1
+	drawStringRepeatConfigString "?" %MESSAGE_BETA
 
 endif
 endif

@@ -1,10 +1,10 @@
-setCursor #WIDTH / 2, 6
+setCursor #WIDTH / 2, 480
 setFontSize %VIDHEIGHT / 25
 setAlign 2 1
 
 
 if 0 != %SHOW_AWARDS & 4
-	setCursor #WIDTH / 2, 480
+	setCursor #WIDTH / 2, 6
 endif
 
 setFontFamily "WarsowNumbersOutline"
@@ -35,10 +35,10 @@ endif
 drawClock
 
 // MATCH STATES
-setCursor #WIDTH / 2, 30
+setCursor #WIDTH / 2, 15
 
 if 0 != %SHOW_AWARDS & 4
-	setCursor #WIDTH / 2, 15
+	setCursor #WIDTH / 2, 30
 endif
 
 setFontFamily "Hemi Head"
