@@ -20,9 +20,9 @@ if %TEAM != #TEAM_SPECTATOR
 		if %ARMOR < 30
 			setColor 1 1 .7 1
 		endif
-        drawPicBar %ARMOR, 150, gfx/ui/white
+        drawPicBar %ARMOR, 100, gfx/ui/white
 		setColor 1 0 0 1
-        drawPicBar %ARMOR - 150, 150, gfx/ui/white
+        drawPicBar %ARMOR - 100, 100, gfx/ui/white
 		setAlign 1 1
 
 		moveCursor -87 * 1.333 * %VIDHEIGHT / %VIDWIDTH, 5
