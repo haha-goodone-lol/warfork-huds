@@ -1,12 +1,14 @@
 if %TEAM != #TEAM_SPECTATOR
-    precache gfx/hud/adem/weapbox
-    if %INSTAGIB == 0
-        setCustomWeaponSelect gfx/hud/adem/weapbox
-        setAlign 2 2
-        setCursor #WIDTH / 2, 380
-        moveCursor 12.5 * 1.333 * %VIDHEIGHT / %VIDWIDTH, 0
-        drawWeaponIcons 25 * 1.333 * %VIDHEIGHT / %VIDWIDTH, 0, 20 * 1.333 * %VIDHEIGHT / %VIDWIDTH, 20
-        moveCursor 0, -14
-        drawWeaponStrongAmmo 25 * 1.333 * %VIDHEIGHT / %VIDWIDTH, 0, 9
+    if %HEALTH > 0
+        precache gfx/hud/adem/weapbox
+        if %INSTAGIB == 0
+            setCustomWeaponSelect gfx/hud/adem/weapbox
+            setAlign 2 2
+            setCursor #WIDTH / 2, 380
+            moveCursor 12.5 * 1.333 * %VIDHEIGHT / %VIDWIDTH, 0
+            drawWeaponIcons 25 * 1.333 * %VIDHEIGHT / %VIDWIDTH, 0, 20 * 1.333 * %VIDHEIGHT / %VIDWIDTH, 20
+            moveCursor 0, -14
+            drawWeaponStrongAmmo 25 * 1.333 * %VIDHEIGHT / %VIDWIDTH, 0, 9
+        endif
     endif
 endif
