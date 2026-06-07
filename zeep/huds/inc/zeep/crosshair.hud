@@ -1,3 +1,15 @@
 setAlign #CENTER, #MIDDLE
-setCursor #WIDTH / 2, #HEIGHT / 2
-drawCrosshair
+setCursor 400.2, 300.5
+
+setSize 32 / 1.35 * %VIDWIDTH / %VIDHEIGHT, 32 / 1.8
+setColor 1, 1, 1, 1
+
+ifnot %SHOW_SPEED == 2
+    drawCrosshair
+endif
+
+if %HEALTH >= 1
+if %SHOW_SPEED == 2
+    drawPicByName "gfx/crosshair.png"
+endif
+endif

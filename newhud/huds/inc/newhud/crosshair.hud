@@ -4,27 +4,12 @@ setCursor 400.2, 300.5
 setSize 32 / 1.35 * %VIDWIDTH / %VIDHEIGHT, 32 / 1.8
 setColor 1, 1, 1, 1
 
-if %SHOW_SPEED == 1
+ifnot %SHOW_SPEED == 2
     drawCrosshair
 endif
 
 if %HEALTH >= 1
 if %SHOW_SPEED == 2
-    drawPicByName "gfx/newhud/xhair/1"
-endif
-if %SHOW_SPEED == 3
-    drawPicByName "gfx/newhud/xhair/2"
-endif
-if %SHOW_SPEED == 4
-    drawPicByName "gfx/newhud/xhair/3"
-endif
-if %SHOW_SPEED == 5
-    drawPicByName "gfx/newhud/xhair/4"
-endif
-if %SHOW_SPEED == 6
-    drawPicByName "gfx/newhud/xhair/5"
-endif
-if %SHOW_SPEED > 6
-    drawCrosshair
+    drawPicByName "gfx/crosshair.png"
 endif
 endif

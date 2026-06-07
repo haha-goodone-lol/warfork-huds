@@ -15,11 +15,11 @@ include damage_numbers
 
 
 if %RACE == 0
-if %SHOW_SPEED <= 1
+if %SHOW_AWARDS <= 1
     include zeep/health
     include zeep/armor
 endif
-if %SHOW_SPEED >= 2
+if %SHOW_AWARDS >= 2
     include zeep/effective_hp
 endif
 
