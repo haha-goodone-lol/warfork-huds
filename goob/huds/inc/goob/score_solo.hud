@@ -4,9 +4,9 @@ setFontStyle Bold
 
 if %SCORE != #NOTSET
 ifnot %TEAMBASED
+	setAlign 1 1
 	setCursor #WIDTH / 2, 30
-	moveCursor -24 * 1.333 * %VIDHEIGHT / %VIDWIDTH, 0
-	setAlign 2 1
+	moveCursor -36 * 1.333 * %VIDHEIGHT / %VIDWIDTH, 0
 	setColor 1 1 1 1
 	setColorAlpha 1
 	setFontSize %VIDHEIGHT / 60
@@ -33,7 +33,7 @@ ifnot %TEAMBASED
 
 	setColor 1 1 1 1
 	drawString "score:"
-	moveCursor 24 * 1.333 * %VIDHEIGHT / %VIDWIDTH, -3
+	moveCursor 36 * 1.333 * %VIDHEIGHT / %VIDWIDTH, -3
 	setFontSize %VIDHEIGHT / 40
 	setFontFamily "Reddit Mono"
 
