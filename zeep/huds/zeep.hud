@@ -8,7 +8,7 @@ setFontSize con_fontSystemSmall
 setScale #DEFAULTSCALE
 if %MATCH_STATE < #MATCH_STATE_POSTMATCH
 
-include zeep/zoom
+include zoom
 include damage_indicator_screen
 include zeep/crosshair
 include damage_numbers
