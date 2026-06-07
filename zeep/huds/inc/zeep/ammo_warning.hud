@@ -10,51 +10,51 @@ setFontStyle bold
 if %LOW_AMMO > %AMMO
 ifnot %AMMO <= 0
 	setColor 0.2 0.12 0.12 1
-	drawString "low ammo"
+	drawString "Low Ammo"
 	moveCursor 1 * 1.333 * %VIDHEIGHT / %VIDWIDTH, 0
-	drawString "low ammo"
+	drawString "Low Ammo"
 	moveCursor 0, 1
-	drawString "low ammo"
+	drawString "Low Ammo"
 	moveCursor 0, -2
-	drawString "low ammo"
+	drawString "Low Ammo"
 	moveCursor -1 * 1.333 * %VIDHEIGHT / %VIDWIDTH, 0
-	drawString "low ammo"
+	drawString "Low Ammo"
 	moveCursor -1 * 1.333 * %VIDHEIGHT / %VIDWIDTH, 0
-	drawString "low ammo"
+	drawString "Low Ammo"
 	moveCursor 0, 1
-	drawString "low ammo"
+	drawString "Low Ammo"
 	moveCursor 0, 1
-	drawString "low ammo"
+	drawString "Low Ammo"
 	moveCursor 1 * 1.333 * %VIDHEIGHT / %VIDWIDTH, 0
-	drawString "low ammo"
+	drawString "Low Ammo"
 	moveCursor 0, -1
 	setColor 1 0.6 0.6 1
-	drawString "low ammo"
+	drawString "Low Ammo"
 endif
 endif
 
 if %AMMO <= 0
 	setColor 0.2 0.12 0.12 1
-	drawString "no ammo"
+	drawString "Out Of Ammo"
 	moveCursor 1 * 1.333 * %VIDHEIGHT / %VIDWIDTH, 0
-	drawString "no ammo"
+	drawString "Out Of Ammo"
 	moveCursor 0, 1
-	drawString "no ammo"
+	drawString "Out Of Ammo"
 	moveCursor 0, -2
-	drawString "no ammo"
+	drawString "Out Of Ammo"
 	moveCursor -1 * 1.333 * %VIDHEIGHT / %VIDWIDTH, 0
-	drawString "no ammo"
+	drawString "Out Of Ammo"
 	moveCursor -1 * 1.333 * %VIDHEIGHT / %VIDWIDTH, 0
-	drawString "no ammo"
+	drawString "Out Of Ammo"
 	moveCursor 0, 1
-	drawString "no ammo"
+	drawString "Out Of Ammo"
 	moveCursor 0, 1
-	drawString "no ammo"
+	drawString "Out Of Ammo"
 	moveCursor 1 * 1.333 * %VIDHEIGHT / %VIDWIDTH, 0
-	drawString "no ammo"
+	drawString "Out Of Ammo"
 	moveCursor 0, -1
 	setColor 1 0.4 0.4 1
-	drawString "no ammo"
+	drawString "Out Of Ammo"
 endif
 endif
 endif
