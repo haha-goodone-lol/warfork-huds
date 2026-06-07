@@ -1,0 +1,14 @@
+if %STUNNED
+setFontFamily "Hemi Head"
+setFontSize %VIDHEIGHT / 64
+setAlign 2 2
+setFontStyle bold
+
+setCursor #WIDTH / 2, 200
+	setColor 0 0 0 0.5
+   moveCursor 1, 1
+	drawString "STUNNED"
+    moveCursor -1, -1
+    setColor 1 0 0 0.5
+	drawString "STUNNED"
+endif

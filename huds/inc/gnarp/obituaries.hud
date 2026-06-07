@@ -1,6 +1,0 @@
-setAlign 3 1
-setCursor #WIDTH - 20, #HEIGHT / 2
-setSize 300 * 1.333 * %VIDHEIGHT / %VIDWIDTH, 120
-setFontFamily "Stratum2"
-setFontSize %VIDHEIGHT / 50
-drawObituaries 3 16

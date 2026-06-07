@@ -1,4 +1,0 @@
-setFontFamily "Stratum2"
-setFontSize %VIDHEIGHT / 48
-setColor 1 1 1 0.8
-drawPointing
