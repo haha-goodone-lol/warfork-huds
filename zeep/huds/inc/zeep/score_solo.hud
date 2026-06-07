@@ -1,5 +1,5 @@
 setColor 1 1 1 1
-setFontFamily "Verdana"
+setFontFamily "Virtue"
 setFontStyle Bold
 
 if %SCORE != #NOTSET
