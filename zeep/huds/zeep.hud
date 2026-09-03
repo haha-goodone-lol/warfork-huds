@@ -72,9 +72,7 @@ include weaponcross
 endif //if %MATCH_STATE < #MATCH_STATE_POSTMATCH
 
 include zeep/awards
-if %SHOW_AWARDS != 2 
-    include zeep/chat
-endif
+include zeep/chat
 
 //adds transparent dark background if scoreboard is shown
 if %SCOREBOARD

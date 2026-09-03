@@ -55,7 +55,7 @@ include pointing
 ifnot %TEAM == #TEAM_SPECTATOR
 
 if %SHOW_PRESSED_KEYS == 2
-    if %CHASING //cg_showPressedKeys 2 will show only if watching
+    if %CHASING != #NOTSET //cg_showPressedKeys 2 will show only if watching
         include newhud/keystate
     endif
 endif
