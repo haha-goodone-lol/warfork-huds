@@ -20,7 +20,7 @@ if %MESSAGE_OTHER
 	drawCleanStatString %MESSAGE_OTHER
 	moveCursor -1 * 1.333 * %VIDHEIGHT / %VIDWIDTH, -1
 	drawStatString %MESSAGE_OTHER
-	endif
+endif
 
 setFontSize %VIDHEIGHT / 26
 setFontFamily "WarsowNumbers"

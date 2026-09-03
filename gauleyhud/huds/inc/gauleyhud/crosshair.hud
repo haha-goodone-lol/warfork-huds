@@ -1,7 +1,13 @@
 setAlign #CENTER, #MIDDLE
-setCursor 400.2, 300.5
+setCursor 400.2, 300.5 // magic numbers from toxichud to actually center it
 
-setSize 32 / 1.35 * %VIDWIDTH / %VIDHEIGHT, 32 / 1.8
+// scale to be 32x32 on any resolution
+setSize 32 * 640 / %VIDWIDTH, 32 * 480 / %VIDHEIGHT
+
+if %SHOW_ZOOM_EFFECT > 1
+    setSize %SHOW_ZOOM_EFFECT * 640 / %VIDWIDTH, %SHOW_ZOOM_EFFECT * 480 / %VIDHEIGHT
+endif
+
 setColor 1, 1, 1, 1
 
 ifnot %SHOW_SPEED == 2
