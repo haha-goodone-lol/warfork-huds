@@ -1,0 +1,21 @@
+setAlign #CENTER, #MIDDLE
+setCursor 400.2, 300.5 // magic numbers from toxichud to actually center it
+
+// scale to be 32x32 on any resolution
+setSize 32 * 640 / %VIDWIDTH, 32 * 480 / %VIDHEIGHT
+
+if %SHOW_ZOOM_EFFECT > 1
+    setSize %SHOW_ZOOM_EFFECT * 640 / %VIDWIDTH, %SHOW_ZOOM_EFFECT * 480 / %VIDHEIGHT
+endif
+
+setColor 1, 1, 1, 1
+
+ifnot %SHOW_SPEED == 2
+    drawCrosshair
+endif
+
+if %HEALTH >= 1
+if %SHOW_SPEED == 2
+    drawPicByName "gfx/crosshair.png"
+endif
+endif
