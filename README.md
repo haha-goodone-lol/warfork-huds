@@ -35,6 +35,6 @@ e.g all enabled (1+2+4+8+16 = 31) `cg_showAwards 31`
 # gauleyhud
 `cg_showTimer 2` for alternative timer/score placement  
 `cg_showTeamLocations 2` in console to enable team names (or 3, to hide team locations)  
-<img width="1920" height="1080" alt="wsw_260903_193434" src="https://github.com/user-attachments/assets/ca393666-d5c6-4e61-a0ed-a7ccd2e554f7" />
+<img width="1920" height="1080" alt="wsw_260903_193751" src="https://github.com/user-attachments/assets/92c906f5-b2b2-438b-bab6-5e03ecaf98d1" />
 <img width="1920" height="1080" alt="wsw_260903_194302" src="https://github.com/user-attachments/assets/1c7b4da4-dfcc-4b3d-93b8-b2335ef2e36a" />
 
